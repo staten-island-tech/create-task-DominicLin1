@@ -1,23 +1,50 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+import "../css/style.css"
+const DOMselectors= {
+   form: document.getElementById("form"),
+   title:document.getElementById("title"),
+}
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+   DOMselectors.form.addEventListener("submit",
+function create(event){
+   let title = DOMselectors.title.value;
+   getData(title);
+   getCharacter(title);
+   event.preventDefault();
+})
+   
+   
+    async function getData(title) {
+      let AnimeTitleURL=`https://animechan.vercel.app/api/random/anime?title=${title}`
+
+   try {
+    
+    const response = await fetch(AnimeTitleURL);
+    const data = await response.json();
+    document.getElementById("api").textContent=data.quote
+    document.getElementById("character").textContent=data.character
+    console.log(data.quote);
+    console.log(data.character)
+    console.log(response)
+   } catch (error) {
+    console.log(error)
+   }
+       }
+
+       async function getCharacter(title) {
+         let AnimeTitleURL=`https://animechan.vercel.app/api/random/anime?title=${title}`
+   
+      try {
+       
+       const response = await fetch(AnimeTitleURL);
+       const data = await response.json();
+      
+       document.getElementById("character").textContent=data.character
+       
+       console.log(data.character)
+       console.log(response)
+      } catch (error) {
+       console.log(error)
+      }
+          }
+   
