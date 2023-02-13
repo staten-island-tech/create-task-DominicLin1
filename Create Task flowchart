@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-13T14:59:51.057Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="bJt1PPsRrU4hd_dciAeD" version="20.8.20" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-13T15:03:43.931Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="3353js6YzG6lC_xMndho" version="20.8.20" type="github">
   <diagram name="Page-1" id="9jHWiYPDj3QLaaQUGjSb">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -37,7 +37,7 @@
         <mxCell id="lo3bqM9VMVeSb3PJyFjs-10" value="Runs the quote&lt;br&gt;Function" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
           <mxGeometry x="550" y="300" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="lo3bqM9VMVeSb3PJyFjs-11" value="Display a fact about an anime" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-11" value="Get a fact about an specific anime from an API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120" y="440" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="lo3bqM9VMVeSb3PJyFjs-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-9" target="lo3bqM9VMVeSb3PJyFjs-11">
@@ -52,13 +52,13 @@
             <mxPoint x="310" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lo3bqM9VMVeSb3PJyFjs-14" value="Stores the fact" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-14" value="Stores the fact into an array&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="250" y="520" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="lo3bqM9VMVeSb3PJyFjs-16" value="Display a quote from an anime" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-16" value="Get a quote about an specific anime from an API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="550" y="430" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="lo3bqM9VMVeSb3PJyFjs-20" value="Stores the quote" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-20" value="Stores the quote into an array" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="440" y="520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="lo3bqM9VMVeSb3PJyFjs-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-16" target="lo3bqM9VMVeSb3PJyFjs-20">
@@ -67,20 +67,8 @@
             <mxPoint x="450" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lo3bqM9VMVeSb3PJyFjs-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-14" target="lo3bqM9VMVeSb3PJyFjs-24">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="590" as="sourcePoint" />
-            <mxPoint x="360" y="630" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="lo3bqM9VMVeSb3PJyFjs-24" value="Wait for a new command(new quote/fact/both)." style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="340" y="610" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="lo3bqM9VMVeSb3PJyFjs-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-20" target="lo3bqM9VMVeSb3PJyFjs-24">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="480" as="sourcePoint" />
-            <mxPoint x="450" y="430" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry x="350" y="720" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="lo3bqM9VMVeSb3PJyFjs-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-5" target="lo3bqM9VMVeSb3PJyFjs-27">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -97,7 +85,7 @@
             <mxPoint x="410" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lo3bqM9VMVeSb3PJyFjs-29" value="Display a fact and quote from an anime" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-29" value="Get a fact and quote about an specific anime from an API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="350" y="380" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="lo3bqM9VMVeSb3PJyFjs-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-29" target="lo3bqM9VMVeSb3PJyFjs-20">
@@ -110,6 +98,51 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="470" as="sourcePoint" />
             <mxPoint x="450" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-34" value="Insert the data into the HTML" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-11" target="lo3bqM9VMVeSb3PJyFjs-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="670" as="sourcePoint" />
+            <mxPoint x="220" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-36" value="Insert the data into the HTML" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-16" target="lo3bqM9VMVeSb3PJyFjs-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="550" as="sourcePoint" />
+            <mxPoint x="730" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-29" target="lo3bqM9VMVeSb3PJyFjs-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="510" as="sourcePoint" />
+            <mxPoint x="410" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-42" value="Insert the data into the HTML" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-43" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-34" target="lo3bqM9VMVeSb3PJyFjs-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="740" as="sourcePoint" />
+            <mxPoint x="240" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-42" target="lo3bqM9VMVeSb3PJyFjs-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="730" as="sourcePoint" />
+            <mxPoint x="475" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lo3bqM9VMVeSb3PJyFjs-45" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lo3bqM9VMVeSb3PJyFjs-36" target="lo3bqM9VMVeSb3PJyFjs-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="800" as="sourcePoint" />
+            <mxPoint x="580" y="750" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
