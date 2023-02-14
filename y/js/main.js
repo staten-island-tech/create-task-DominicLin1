@@ -2,19 +2,31 @@ import "../css/style.css"
 const DOMselectors= {
    form: document.getElementById("form"),
    title:document.getElementById("title"),
+   title2:document.getElementById("title2"),
+   form2:document.getElementById("form2")
 }
 
 
    DOMselectors.form.addEventListener("submit",
 function create(event){
    let title = DOMselectors.title.value;
-   getData(title);
-   getCharacter(title);
+   let title2= DOMselectors.title2.value
+   getQuote(title);
    event.preventDefault();
+   getFact(title2)
+})
+   
+DOMselectors.form2.addEventListener("submit",
+function create2(event){
+   
+   let title2= DOMselectors.title2.value
+   getFact(title2)
+   event.preventDefault();
+
 })
    
    
-    async function getData(title) {
+    async function getQuote(title) {
       let AnimeTitleURL=`https://animechan.vercel.app/api/random/anime?title=${title}`
 
    try {
@@ -31,7 +43,7 @@ function create(event){
    }
        }
 
-       async function getCharacter(title) {
+   /*     async function getCharacter(title) {
          let AnimeTitleURL=`https://animechan.vercel.app/api/random/anime?title=${title}`
    
       try {
@@ -47,4 +59,19 @@ function create(event){
        console.log(error)
       }
           }
-   
+ */
+           
+    async function getFact(title2) {
+      let AnimeTitleURL2=`https://anime-facts-rest-api.herokuapp.com/api/v1/:${title2}`
+
+   try {
+    
+    const response2 = await fetch(AnimeTitleURL2);
+    const data2 = await response.json();
+    document.getElementById("create").textContent=data.fact
+    console.log(data2.fact);
+    console.log(response2)
+   } catch (error) {
+    console.log(error)
+   }
+    }
