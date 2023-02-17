@@ -48,7 +48,7 @@ function create2(event){
    
       try {
        
-       const response = await fetch(AnimeTitleURL);
+       const response = await fetch(AnimeTitleURL); 
        const data = await response.json();
       
        document.getElementById("character").textContent=data.character
@@ -60,7 +60,7 @@ function create2(event){
       }
           }
  */
-           
+/*            
     async function getFact(title2) {
       let AnimeTitleURL2=`https://anime-facts-rest-api.herokuapp.com/api/v1/:${title2}`
 
@@ -75,3 +75,7 @@ function create2(event){
     console.log(error)
    }
     }
+   //  Api doesn't work anymore
+    */
+
+ 
