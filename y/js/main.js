@@ -10,13 +10,13 @@ const DOMselectors= {
    DOMselectors.form.addEventListener("submit",
 function create(event){
    let title = DOMselectors.title.value;
-   let title2= DOMselectors.title2.value
+/*    let title2= DOMselectors.title2.value */
    getQuote(title);
    event.preventDefault();
    getFact(title2)
 })
    
-DOMselectors.form2.addEventListener("submit",
+/* DOMselectors.form2.addEventListener("submit",
 function create2(event){
    
    let title2= DOMselectors.title2.value
@@ -24,7 +24,7 @@ function create2(event){
    event.preventDefault();
 
 })
-   
+    */
    
     async function getQuote(title) {
       let AnimeTitleURL=`https://animechan.vercel.app/api/random/anime?title=${title}`
