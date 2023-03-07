@@ -1,5 +1,5 @@
 :root {
-  font-family: 'Zeyada', cursive;
+  font-family: 'Oswald', sans-serif;
   font-size: 32px;
   line-height: 24px;
   font-weight: 400;
@@ -19,7 +19,8 @@
 #AN {
   display: flex;
       flex-direction: column;
-      margin: 0px auto;
+      font-size: 32px;
+      margin: 10px auto;
       text-align: center;
     width: 100vw; 
     margin: 50px auto;
@@ -53,3 +54,42 @@
     color: chartreuse;
     box-shadow: 20px 10px 10px black;
     } 
+
+    #CR {
+      display: flex;
+      font-size: 32px;
+          flex-direction: column;
+          margin: 0px auto;
+          text-align: center;
+        width: 100vw; 
+        margin: 50px auto;
+      font-style: italic;
+      border-width: 10px;
+      border-style: solid;
+      border-color: red;
+      border-image: initial;
+      padding: 20px 20px;
+      color: gold;
+      box-shadow: 20px 10px 10px black;
+      } 
+      h1{
+        color: grey;
+        text-align: center;
+      }
+    
+    #anime {
+        display: flex;
+            flex-direction: column;
+            margin: 0px auto;
+            text-align: center;
+          width: 100vw; 
+          margin: 50px auto;
+        font-style: italic;
+        border-width: 10px;
+        border-style: solid;
+        border-color: red;
+        border-image: initial;
+        padding: 20px 20px;
+        color: chartreuse;
+        box-shadow: 20px 10px 10px black;
+        } 
