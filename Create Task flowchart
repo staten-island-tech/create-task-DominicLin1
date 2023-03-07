@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-07T00:48:26.101Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="3cHzpY6YWygzSElpI7Go" version="20.8.15" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-07T00:50:16.280Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="mdaRFYNkuzEsERL_tGeC" version="20.8.15" type="github">
   <diagram name="Page-1" id="9jHWiYPDj3QLaaQUGjSb">
-    <mxGraphModel dx="954" dy="616" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1314" dy="813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -51,12 +51,6 @@
         </mxCell>
         <mxCell id="lo3bqM9VMVeSb3PJyFjs-24" value="Wait for a new command(new quote/fact/both)." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="350" y="720" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="lo3bqM9VMVeSb3PJyFjs-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="lo3bqM9VMVeSb3PJyFjs-5" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="420" as="sourcePoint" />
-            <mxPoint x="410" y="290" as="targetPoint" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="lo3bqM9VMVeSb3PJyFjs-34" value="Insert the data into the HTML" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="550" width="120" height="60" as="geometry" />
